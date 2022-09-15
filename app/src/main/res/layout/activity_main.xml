@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/txt_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:textColorHint="#8080"
+                app:startIconDrawable="@drawable/ic_baseline_link_24"
+                android:hint="Web URL"
+                app:layout_constraintBottom_toBottomOf="@id/btn_1"
+                app:layout_constraintEnd_toStartOf="@id/btn_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_browser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#1b4d3e"
+                android:gravity="center"
+                android:text="Browse"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:textColorHint="#8080"
+                android:hint="Call Number"
+                app:layout_constraintBottom_toBottomOf="@id/btn_2"
+                app:layout_constraintEnd_toStartOf="@id/btn_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_2"
+                app:startIconDrawable="@drawable/ic_baseline_phone_forwarded_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#1b4d3e"
+                android:text=" CALL"
+                app:layout_constraintEnd_toEndOf="@+id/btn_1"
+                app:layout_constraintTop_toBottomOf="@+id/btn_1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:textColorHint="#8080"
+                android:hint="Contact list"
+                app:layout_constraintBottom_toBottomOf="@id/btn_3"
+                app:layout_constraintEnd_toStartOf="@id/btn_3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_3"
+                app:startIconDrawable="@drawable/ic_baseline_folder_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_contect_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#1b4d3e"
+                android:text="CONTACT"
+                app:layout_constraintEnd_toEndOf="@id/btn_2"
+                app:layout_constraintTop_toBottomOf="@id/btn_2" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:textColorHint="#8080"
+                android:hint="Call log"
+                app:layout_constraintBottom_toBottomOf="@id/btn_4"
+                app:layout_constraintEnd_toStartOf="@id/btn_4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_4"
+                app:startIconDrawable="@drawable/ic_baseline_phone_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_call_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#1b4d3e"
+                android:text="CALL-LOG"
+                app:layout_constraintEnd_toEndOf="@id/btn_3"
+                app:layout_constraintTop_toBottomOf="@id/btn_3" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                app:startIconDrawable="@drawable/ic_baseline_photo_24"
+                android:textColorHint="#8080"
+                android:hint="Gallary"
+                app:layout_constraintBottom_toBottomOf="@id/btn_5"
+                app:layout_constraintEnd_toStartOf="@id/btn_5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_5">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_Gallary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#1b4d3e"
+                android:text="Gallery"
+                app:layout_constraintEnd_toEndOf="@id/btn_4"
+                app:layout_constraintTop_toBottomOf="@id/btn_4" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:textColorHint="#8080"
+                android:hint="Camera"
+                app:layout_constraintBottom_toBottomOf="@id/btn_6"
+                app:layout_constraintEnd_toStartOf="@id/btn_6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_6"
+                app:startIconDrawable="@drawable/ic_baseline_photo_camera_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#1b4d3e"
+                android:text="camera"
+                app:layout_constraintEnd_toEndOf="@id/btn_5"
+                app:layout_constraintTop_toBottomOf="@id/btn_5" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:textColorHint="#8080"
+                android:hint="Alarm"
+                app:layout_constraintBottom_toBottomOf="@id/btn_7"
+                app:layout_constraintEnd_toStartOf="@id/btn_7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_7"
+                app:startIconDrawable="@drawable/ic_baseline_alarm_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_Alarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#1b4d3e"
+                android:text="Alarm"
+                app:layout_constraintEnd_toEndOf="@id/btn_6"
+                app:layout_constraintTop_toBottomOf="@id/btn_6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
